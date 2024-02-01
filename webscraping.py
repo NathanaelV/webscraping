@@ -25,6 +25,7 @@ html_content = element.get_attribute('outerHTML')
 
 # 2. Parsear o conteúdo HTML - BeaultifulSoup
 
+# O parametro name é o nome da tag HTML
 soup = BeautifulSoup(html_content, 'html.parser')
 table = soup.find(name='table')
 
